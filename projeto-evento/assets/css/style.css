@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+p {
+  font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+header {
+  width: 100vw;
+  background: red;
+}
+
+.logo {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  background: blue;
+}
+
+.logo img {
+  width: 200px;
+}
+
+nav {
+  width: 1200px;
+  display: flex;
+  margin: 0 auto;
+  background: green;
+}
+
+nav ul li {
+  list-style: none;
+}
+
