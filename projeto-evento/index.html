@@ -6,44 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Evento de Tecnologia</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;700;800&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;700;800&family=Ubuntu+Condensed&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- HEADER -->
-    <header>
-      <div class="logo">
-        <img src="./assets/imgs/logodev.png" alt="Logo do Site" />
-      </div>
-
-      <nav>
-        <ul>
-          <li><a href="#">Página Inicial</a></li>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Palestrantes</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div class="container-header">
+      <header>
+        <span class="logo">
+          <a href="/index.html"
+            ><img src="./assets/imgs/logodev.png" alt="Logo do Site"
+          /></a>
+        </span>
+        <nav>
+          <ul>
+            <li><a class="home-active" href="#">Home</a></li>
+            <li><a href="#">Sobre Nós</a></li>
+            <li><a href="#">Palestrantes</a></li>
+            <li><a href="#">Eventos</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
     <main>
-      <!-- CONTEÚDO PRINCIPAL  -->
+      <section class="container-banner">
+        <div class="banner">
+          <img src="./assets/imgs/bannerevent01.jpg" alt="Banner do Site" />
+        </div>
+        <h1>Pesquisar Eventos</h1>
+      </section>
     </main>
-
     <!-- FOOTER -->
     <footer>
-      <div>
-        <h2></h2>
-      </div>
-      <div>
-        <img src="" alt="">
-      </div>
-      <div>
-        <h2>Siga nossas redes sociais</h2>
-        <ul>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-        </ul>
+      <div class="container-footer">
+        <div class="menu-body">
+          <h2>Sobre</h2>
+          <p>DevCommunity, visa reunir os principais eventos do Brasil.</p>
+        </div>
+        <div class="menu-body">
+          <img src="./assets/imgs/logodev.png" alt="Logo do site " />
+        </div>
+        <div class="menu-body">
+          <h2>Siga nossas redes sociais</h2>
+          <nav>
+            <ul>
+              <li>
+                <a href="#"
+                  ><img src="./assets/webfonts/instagram-brands.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="./assets/webfonts/linkedin-brands.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="./assets/webfonts/square-facebook-brands.svg"
+                    alt=""
+                /></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </footer>
   </body>

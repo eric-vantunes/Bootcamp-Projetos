@@ -1,9 +1,10 @@
 * {
   margin: 0;
   padding: 0;
+  transition: all 0.3s linear;
 }
 
-h1, h2, h3 {
+h1, h2, h3, a {
   font-family: 'Nunito Sans', sans-serif;
 }
 
@@ -11,30 +12,153 @@ p {
   font-family: 'Ubuntu Condensed', sans-serif;
 }
 
+/* HEADER, MENU */
+.container-header {
+  background-color: #c60610;
+}
+
 header {
-  width: 100vw;
-  background: red;
+  max-width: 100vw;
+  width: 100%;
+  display: flex;
+  justify-content:start;
+  flex-direction: row;
+  margin: 0 auto;
+  padding: 20px 15px;
+  box-sizing: border-box;
 }
 
 .logo {
-  display: flex;
-  width: 1200px;
-  margin: 0 auto;
-  background: blue;
+  height: 100%;
 }
 
 .logo img {
-  width: 200px;
+  height: 25px;
 }
 
-nav {
-  width: 1200px;
+header nav ul{
+ padding-left: 0;
+ list-style: none;
+ display: flex;
+}
+
+header nav ul a, header nav ul li a:visited{
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+header nav ul a:hover, 
+header nav ul li a:active, 
+header nav ul li a.home-active{
+  /* background-color: #f5f5f5; */
+  color: #000;
+}
+
+/* MAIN */
+ 
+ .container-banner {
+  width: 100%;
+ }
+
+ .container-banner h1 {
+  font-size: 2em;
+ }
+
+ .banner img {
+  width: 100%;
+  opacity: 0.75;
+ }
+
+ /* FOOTER */
+ footer {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #333;
+  padding: 100px 0;
+ }
+
+ footer .container-footer {
+  max-width: 1200px;
   display: flex;
   margin: 0 auto;
-  background: green;
+  justify-content: space-evenly;
+  flex-direction: row;
+ }
+
+ footer 
+ .container-footer 
+ .menu-body {
+  display: flex;
+  flex-direction: column;
+  width: 33.33%;
+  align-items: center;
+  border-right: 2px solid #404040;
+  box-sizing: border-box;
+ }
+
+ footer 
+ .container-footer 
+ .menu-body:last-child {
+  border-right: none;
+ }
+
+footer 
+.container-footer 
+.menu-body h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 24px;
+  margin-bottom: 0;
 }
 
-nav ul li {
-  list-style: none;
+footer .container-footer 
+.menu-body p{
+  color: #fff;
 }
+
+footer 
+.container-footer 
+.menu-body ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+}
+
+footer .container-footer 
+.menu-body ul li a,
+footer .container-footer 
+.menu-body ul li a:visited {
+  padding: 5px 10px 5px 0;
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+footer .container-footer 
+.menu-body ul li a img {
+  width: 30px;
+}
+
+footer .container-footer 
+.menu-body ul li a img:hover {
+  opacity: 0.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
