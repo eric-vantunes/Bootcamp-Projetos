@@ -8,36 +8,35 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;700;800&family=Ubuntu+Condensed&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;700;800&family=Ubuntu+Condensed&display=swap" rel="stylesheet"/>
+
+    <link href="./libs/bootstrap/bootstrap.min.css" rel="stylesheet">
   </head>
   <body>
     <!-- HEADER -->
-    <div class="container-header">
-      <header>
-        <span class="logo">
-          <a href="/index.html"><img src="./assets/imgs/logodev.png" alt="Logo do Site"/></a>
-        </span>
-        <nav>
-          <ul>
-            <li><a class="home-active" href="#">Home</a></li>
-            <li><a href="#">Sobre Nós</a></li>
-            <li><a href="#">Palestrantes</a></li>
-            <li><a href="#">Eventos</a>
-              <ul>
-                <li><a href="#">Desenvolvimento</a></li>
-                <li><a href="#">Business</a></li>
-                <li><a href="#">Gestão T.I</a></li>
-                <li><a href="#">Devops</a></li>
+      <header class="container-fluid ">
+        <nav class="navbar navbar-expand-lg bg-light media-display-first">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img class="logo-img" src="./assets/imgs/logodev.png" alt="Foto Logo"></a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#sobre">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sobre Nós</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Eventos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contato</a>
+                </li>
               </ul>
-            </li>
-            <li><a href="#contato">Contato</a></li>
-          </ul>
+            </div>
+          </div>
         </nav>
       </header>
-    </div>
     <main>
       <section class="container-banner">
         <div class="banner">
@@ -176,5 +175,6 @@
         </div>
       </div>
     </footer>
+    <script src="./libs/bootstrap/bootstrap.bundle.min.js"></script>
   </body>
 </html>
