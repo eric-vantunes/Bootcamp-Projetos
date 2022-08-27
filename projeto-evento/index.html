@@ -10,12 +10,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;700;800&family=Ubuntu+Condensed&display=swap" rel="stylesheet"/>
 
-    <link href="./libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/libs/bootstrap/bootstrap.min.css" rel="stylesheet">
   </head>
   <body>
     <!-- HEADER -->
-      <header class="container-fluid ">
-        <nav class="navbar navbar-expand-lg bg-light media-display-first">
+      <header class="container-fluid bg-dark">
+        <nav class="navbar navbar-expand-lg bg-light media-display-first navbar-dark bg-dark">
           <div class="container-fluid">
             <a class="navbar-brand" href="#"><img class="logo-img" src="./assets/imgs/logodev.png" alt="Foto Logo"></a>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -27,7 +27,7 @@
                   <a class="nav-link" href="#">Sobre Nós</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Eventos</a>
+                   <a class="nav-link" href="#">Eventos</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Contato</a>
@@ -45,57 +45,189 @@
           <span class="border"></span>
           <p>Os melhores eventos de T.I do Brasil para você.</p>
         </div>
-        <div class="link-sobre">
-            <a href="">Mais Informações</a>
-        </div>
       </section>
 
-      <section class="container-eventos-recente">
-        <div class="info">
-          <h2>Eventos Recentes</h2>
-          <p>Últimos eventos adicionados</p>
-        </div>
-        <div class="event-cards">
-          <div class="cards">
-            <img src="/assets/imgs/imgcards/tdc-image-min.png" alt="">
-            <h3>Maior evento do Brasil</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat tenetur enim natus dolorum culpa mollitia sint eaque?</p>
-            <a href="#">Saiba Mais</a>
-          </div>
-          <div  class="cards">
-            <img src="/assets/imgs/imgcards/hacktown-mg-min.png" alt="">
-            <h3>Maior evento do Brasil</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat tenetur enim natus dolorum culpa mollitia sint eaque?</p>
-            <a href="#">Saiba Mais</a>
-          </div>
-          <div class="cards">
-            <img src="/assets/imgs/imgcards/frontinn-min.png" alt="">
-            <h3>Maior evento do Brasil</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat tenetur enim natus dolorum culpa mollitia sint eaque?</p>
-            <a href="#">Saiba Mais</a>
-          </div>
-          <div class="cards">
-            <img src="/assets/imgs/imgcards/ruby-conf-min.png" alt="">
-            <h3>Maior evento do Brasil</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat tenetur enim natus dolorum culpa mollitia sint eaque?</p>
-            <a href="#">Saiba Mais</a>
-          </div>
-          <div class="cards">
-            <img src="/assets/imgs/imgcards/rio-innovation.png" alt="">
-            <h3>Maior evento do Brasil</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat tenetur enim natus dolorum culpa mollitia sint eaque?</p>
-            <a href="#">Saiba Mais</a>
-          </div>
-          <div class="cards">
-            <img src="/assets/imgs/imgcards/rio-hacktown-min.png" alt="">
-            <h3>Maior evento do Brasil</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat tenetur enim natus dolorum culpa mollitia sint eaque?</p>
-            <a href="#">Saiba Mais</a>
-          </div>
-        </div>
-      </section>
+      <!-- carousel --> 
 
-      <section class="container-sugestão-eventos">
+      <div class="slider-box">
+        <div class="container-fluid slider1">
+          <section class="d-flex justify-content-between margin-right">
+            <h2>Eventos Recentes</h2>
+          </section>
+            <div class="">
+              <button  type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active tab-change-btn" aria-current="true" aria-label="Slide 1"></button>
+              <button class="tab-change-btn" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button class="tab-change-btn" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+          </section>
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            
+            <div class="carousel-inner" style="position: relative; overflow: visible; ">
+              <div class="carousel-item active">
+                <section class="d-flex">
+                  <div class="card" >
+                    <img src="./assets/imgs/imgcards/frontinn-min.png" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                        <section class="d-flex justify-content-between">
+                          <div>
+                            <h2></h2>
+                          </div>
+                        </section>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img src="./assets/imgs/imgcards/codecon-min.png" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <h2>Maior evento do Brasil</h2>
+                        </div>
+                      </section>
+                  </div>
+                  </div>
+                  <div class="card">
+                    <img src="./assets/imgs/imgcards/devops-min.png" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <h2></h2>
+                        </div>
+                      </section>
+                  </div>
+                  </div>
+                  <div class="card">
+                    <img src="./assets/imgs/imgcards/febraban.png" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <h2></h2>
+                        </div>
+                      </section>
+                  </div>
+                  </div>
+                  <div class="card">
+                    <img src="./assets/imgs/imgcards/vtex-day-min.png" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                         <h2></h2>
+                        </div>
+                      </section>
+                  </div>
+                  </div>
+                  <div class="card">
+                    <img src="./assets/imgs/imgcards/websummit-min.png" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                        <h2></h2>
+                        </div>
+                      </section>
+                  </div>
+                  </div>
+                  <div class="card">
+                    <img src="./assets/imgs/imgcards/ruby-conf-min.png" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <h2></h2>
+                        </div>
+                      </section>
+                  </div>
+                  </div>
+                  <div class="card">
+                    <img src="./assets/imgs/imgcards/codecon-min.png" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                         <h2></h2>
+                        </div>
+                      </section>
+                  </div>
+                  </div>
+                  <div class="card">
+                    <img src="./assets/imgs/imgcards/codecon-min.png" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <h2></h2>
+                        </div>
+                      </section>
+                  </div>
+                  </div>
+                  <div class="card">
+                    <img src="./assets/imgs/imgcards/codecon-min.png" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <h2></h2>
+                        </div>
+                      </section>
+                  </div>
+                  </div>
+                  <div class="card">
+                    <img src="./assets/imgs/imgcards/codecon-min.png" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <h2></h2>
+                        </div>
+                      </section>
+                  </div>
+                  </div>
+                  <div class="card">
+                    <img src="./assets/imgs/imgcards/codecon-min.png" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <h2></h2>
+                        </div>
+                      </section>
+                  </div>
+                  </div>
+                  <div class="card">
+                    <img src="./assets/imgs/imgcards/codecon-min.png" class="card-img-top" alt="...">
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <h2></h2>
+                        </div>
+                      </section>
+                  </div>
+                  </div>
+           
+<!--              
+            <div class="carousel-item">
+              <img src="..." class="d-block w-100" alt="...">
+            </div>
+            
+            <div class="carousel-item">
+              <img src="..." class="d-block w-100" alt="...">
+            </div>
+           
+            <div class="carousel-item">
+              <img src="..." class="d-block w-100" alt="...">
+            </div>
+            
+            <div class="carousel-item">
+              <img src="..." class="d-block w-100" alt="...">
+            </div>
+            
+            <div class="carousel-item">
+              <img src="..." class="d-block w-100" alt="...">
+            </div>
+            
+            <div class="carousel-item">
+              <img src="..." class="d-block w-100" alt="...">
+            </div>
+            </div>
+        </div>
+        </section>
+        </div> -->
+
+
+      <!-- <section class="container-sugestão-eventos">
         <div class="info">
           <h2>Algumas Sugestões de Eventos</h2>
           <p>Eventos que você pode gostar</p>
@@ -103,21 +235,12 @@
         <div class="event-cards">
           <div class="cards">
             <img src="/assets/imgs/imgcards/codecon-min.png" alt="">
-            <h3>Maior evento do Brasil</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat tenetur enim natus dolorum culpa mollitia sint eaque?</p>
-            <a href="#">Saiba Mais</a>
           </div>
           <div class="cards">
             <img src="/assets/imgs/imgcards/devops-min.png" alt="">
-            <h3>Maior evento do Brasil</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat tenetur enim natus dolorum culpa mollitia sint eaque?</p>
-            <a href="#">Saiba Mais</a>
           </div>
           <div class="cards">
             <img src="/assets/imgs/imgcards/vtex-day-min.png" alt="">
-            <h3>Maior evento do Brasil</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat tenetur enim natus dolorum culpa mollitia sint eaque?</p>
-            <a href="#">Saiba Mais</a>
           </div>
       </section>
 
@@ -148,7 +271,7 @@
       <section class="container-tabela-programacao"></section>
     </main>
     <!-- FOOTER -->
-    <footer id="contato">
+    <!-- <footer id="contato">
       <div class="container-footer">
         <div class="menu-body">
           <h2>Sobre</h2>
@@ -173,8 +296,11 @@
             </ul>
           </nav>
         </div>
-      </div>
-    </footer>
-    <script src="./libs/bootstrap/bootstrap.bundle.min.js"></script>
+      </div> -->
+    </footer> -->
+
+    <!-- script -->
+    <script src="./assets/libs/bootstrap/bootstrap.bundle.min.js"></script>
+
   </body>
 </html>
