@@ -1,306 +1,675 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Evento de Tecnologia</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;700;800&family=Ubuntu+Condensed&display=swap" rel="stylesheet"/>
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Evento de Tecnologia</title>
+<!-- css -->
+<link rel="stylesheet" href="./assets/css/style.css" />
+<!-- font-google -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;700;800&family=Ubuntu+Condensed&display=swap" rel="stylesheet"/>
+<!-- bootstrap -->
+<link href="./libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<!-- HEADER -->
+  <header class="container-fluid bg-dark">
+    <nav class="navbar navbar-expand-lg bg-light evento-navbar media-display-first navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img class="logo-img" src="./assets/imgs/logodev.png" alt="Foto Logo"></a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#sobre">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sobre Nós</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Eventos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-    <link href="./assets/libs/bootstrap/bootstrap.min.css" rel="stylesheet">
-  </head>
-  <body>
-    <!-- HEADER -->
-      <header class="container-fluid bg-dark">
-        <nav class="navbar navbar-expand-lg bg-light media-display-first navbar-dark bg-dark">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img class="logo-img" src="./assets/imgs/logodev.png" alt="Foto Logo"></a>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#sobre">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Sobre Nós</a>
-                </li>
-                <li class="nav-item">
-                   <a class="nav-link" href="#">Eventos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contato</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </header>
-    <main>
-      <section class="container-banner">
-        <div class="banner">
-          <img src="./assets/imgs/bannerevent01.jpg" alt="Banner do Site" />
-          <h1>Dev Community </h1>
-          <span class="border"></span>
-          <p>Os melhores eventos de T.I do Brasil para você.</p>
+<!-- Banner Evento -->
+<main>
+  <div class="">
+    <section class="container-banner">
+        <div class="top"></div>
+        <div class="bottom"></div>
+        <img class="banner-img" src="./assets/imgs/bannerevent01.jpg" alt="Banner Evento"></img>
+        <div class="content">
+          <!-- banner-info -->
+            <section class="left">
+                <h1 class="text-white" style="font-size: 3em;">Dev Community</h1>
+                <p class="text-white">Reunimos os melhores eventos <strong>tech</strong> para você.</p>
+                <div class="d-flex mt-2"> <!-- button banner -->
+                  <button class="btn btn-secondary m-2"><i class="bi bi-info-circle" style="padding: 0%;"></i> More Info</button>
+                </div>
+            </section>
         </div>
       </section>
+  </div>
 
-      <!-- carousel --> 
-
-      <div class="slider-box">
-        <div class="container-fluid slider1">
-          <section class="d-flex justify-content-between margin-right">
-            <h2>Eventos Recentes</h2>
-          </section>
-            <div class="">
-              <button  type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active tab-change-btn" aria-current="true" aria-label="Slide 1"></button>
-              <button class="tab-change-btn" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button class="tab-change-btn" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  <!-- carousel --> 
+  <div class="slider-box">
+      <section class="container-fluid slide1">
+        <div class="d-flex justify-content-between">
+            <h2 class="text-white"> Eventos Recentes </h2> 
+          <div class="">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+        </div>
+        <!--  -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+          <div class="carousel-inner" style="position: relative; overflow: visible;">
+            <!-- 1 slide  -->
+            <div class="carousel-item active">
+              <section class="d-flex" style="position: absolute;">
+              <!-- Card -->
+              <div class="card">
+                <img src="./assets/imgs/imgcards/codecon-min.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <h3>Codecon</h3>
+                      <p>Lorem Ipsum</p>
+                    </div>
+                  </section>
+                  <section class="d-flex justify-content-between align-items-center">
+                    <p class="text-card m-0">Somos a CodeCon</p>
+                    <span class="text-card m-2 text-bg-dark">Online</span>
+                  </section>
+                </div>
+              </div>
+              <!-- Card-end -->
+                <!-- Card -->
+                <div class="card">
+                <img src="./assets/imgs/imgcards/devops-min.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <h3>Devops</h3>
+                      <p>Lorem Ipsum</p>
+                    </div>
+                  </section>
+                  <section class="d-flex justify-content-between align-items-center">
+                    <p class="text-card m-0">Somos a CodeCon</p>
+                    <span class="text-card m-2 text-bg-dark">Online</span>
+                  </section>
+                </div>
+              </div>
+              <!-- Card-end -->
+                <!-- Card -->
+                <div class="card">
+                <img src="./assets/imgs/imgcards/frontinn-min.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <h3>Frontin Sampa</h3>
+                      <p>Lorem Ipsum</p>
+                    </div>
+                  </section>
+                  <section class="d-flex justify-content-between align-items-center">
+                    <p class="text-card m-0">Somos a CodeCon</p>
+                    <span class="text-card m-2 text-bg-dark">Online</span>
+                  </section>
+                </div>
+              </div>
+              <!-- Card-end -->
+                <!-- Card -->
+                <div class="card">
+                <img src="./assets/imgs/imgcards/vtex-day-min.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <h3>Vtex Day</h3>
+                      <p>Lorem Ipsum</p>
+                    </div>
+                  </section>
+                  <section class="d-flex justify-content-between align-items-center">
+                    <p class="text-card m-0">Somos a CodeCon</p>
+                    <span class="text-card m-2 text-bg-dark">Online</span>
+                  </section>
+                </div>
+              </div>
+              <!-- Card-end -->
+                <!-- Card -->
+                <div class="card">
+                <img src="./assets/imgs/imgcards/websummit-min.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <h3>Web Summit</h3>
+                      <p>Lorem Ipsum</p>
+                    </div>
+                  </section>
+                  <section class="d-flex justify-content-between align-items-center">
+                    <p class="text-card m-0">Somos a CodeCon</p>
+                    <span class="text-card m-2 text-bg-dark">Online</span>
+                  </section>
+                </div>
+              </div>
+              <!-- Card-end -->
+                <!-- Card -->
+                <div class="card">
+                <img src="./assets/imgs/imgcards/ruby-conf-min.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <h3>Ruby Conf</h3>
+                      <p>Lorem Ipsum</p>
+                    </div>
+                  </section>
+                  <section class="d-flex justify-content-between align-items-center">
+                    <p class="text-card m-0">Somos a CodeCon</p>
+                    <span class="text-card m-2 text-bg-dark">Online</span>
+                  </section>
+                </div>
+              </div>
+              <!-- Card-end -->
+                <!-- Card -->
+                <div class="card">
+                <img src="./assets/imgs/imgcards/tdc-image-min.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <h3>TDC</h3>
+                      <p>Lorem Ipsum</p>
+                    </div>
+                  </section>
+                  <section class="d-flex justify-content-between align-items-center">
+                    <p class="text-card m-0">Somos a CodeCon</p>
+                    <span class="text-card m-2 text-bg-dark">Online</span>
+                  </section>
+                </div>
+              </div>
+              <!-- Card-end -->
+                <!-- Card -->
+                <div class="card">
+                <img src="./assets/imgs/imgcards/techweek.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <h3>tech Week</h3>
+                      <p>Lorem Ipsum</p>
+                    </div>
+                  </section>
+                  <section class="d-flex justify-content-between align-items-center">
+                    <p class="text-card m-0">Somos a CodeCon</p>
+                    <span class="text-card m-2 text-bg-dark">Online</span>
+                  </section>
+                </div>
+              </div>
+              <!-- Card-end -->
+                <!-- Card -->
+                <div class="card">
+                <img src="./assets/imgs/imgcards/codecon-min.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <h3>Codecon</h3>
+                      <p>Lorem Ipsum</p>
+                    </div>
+                  </section>
+                  <section class="d-flex justify-content-between align-items-center">
+                    <p class="text-card m-0">Somos a CodeCon</p>
+                    <span class="text-card m-2 text-bg-dark">Online</span>
+                  </section>
+                </div>
+              </div>
+              <!-- Card-end -->
+                <!-- Card -->
+                <div class="card">
+                <img src="./assets/imgs/imgcards/codecon-min.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <h3>Codecon</h3>
+                      <p>Lorem Ipsum</p>
+                    </div>
+                  </section>
+                  <section class="d-flex justify-content-between align-items-center">
+                    <p class="text-card m-0">Somos a CodeCon</p>
+                    <span class="text-card m-2 text-bg-dark">Online</span>
+                  </section>
+                </div>
+              </div>
+              <!-- Card-end -->
+              </section>
             </div>
-          </section>
-          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            
-            <div class="carousel-inner" style="position: relative; overflow: visible; ">
+            <!-- 2 slide  -->
+              <section class="container-fluid slide3"> 
+                <div class="d-flex justify-content-between margin-right margin-title">
+                    <h2 class="text-white"> Eventos que você pode gostar </h2> 
+                  <div class="">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                </div>
+                <!--  -->
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                  <div class="carousel-inner" style="position: relative; overflow: visible;">
               <div class="carousel-item active">
                 <section class="d-flex">
-                  <div class="card" >
-                    <img src="./assets/imgs/imgcards/frontinn-min.png" class="card-img-top" alt="...">
-                    <div class="card-body"> 
-                        <section class="d-flex justify-content-between">
-                          <div>
-                            <h2></h2>
-                          </div>
-                        </section>
+                  <!-- Card -->
+                  <div class="card">
+                    <img src="./assets/imgs/imgcards/codecon-min.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <h3>Codecon</h3>
+                          <p>Lorem Ipsum</p>
+                        </div>
+                      </section>
+                      <section class="d-flex justify-content-between align-items-center">
+                        <p class="text-card m-0">Somos a CodeCon</p>
+                        <span class="text-card m-2 text-bg-dark">Online</span>
+                      </section>
                     </div>
                   </div>
-
-                  <div class="card">
-                    <img src="./assets/imgs/imgcards/codecon-min.png" class="card-img-top" alt="...">
-                    <div class="card-body"> 
-                      <section class="d-flex justify-content-between">
-                        <div>
-                          <h2>Maior evento do Brasil</h2>
-                        </div>
-                      </section>
-                  </div>
-                  </div>
-                  <div class="card">
+                  <!-- Card-end -->
+                    <!-- Card -->
+                    <div class="card">
                     <img src="./assets/imgs/imgcards/devops-min.png" class="card-img-top" alt="...">
-                    <div class="card-body"> 
+                    <div class="card-body">
                       <section class="d-flex justify-content-between">
                         <div>
-                          <h2></h2>
+                          <h3>Devops</h3>
+                          <p>Lorem Ipsum</p>
                         </div>
                       </section>
+                      <section class="d-flex justify-content-between align-items-center">
+                        <p class="text-card m-0">Somos a CodeCon</p>
+                        <span class="text-card m-2 text-bg-dark">Online</span>
+                      </section>
+                    </div>
                   </div>
-                  </div>
-                  <div class="card">
-                    <img src="./assets/imgs/imgcards/febraban.png" class="card-img-top" alt="...">
-                    <div class="card-body"> 
+                  <!-- Card-end -->
+                    <!-- Card -->
+                    <div class="card">
+                    <img src="./assets/imgs/imgcards/frontinn-min.png" class="card-img-top" alt="...">
+                    <div class="card-body">
                       <section class="d-flex justify-content-between">
                         <div>
-                          <h2></h2>
+                          <h3>Frontin Sampa</h3>
+                          <p>Lorem Ipsum</p>
                         </div>
                       </section>
+                      <section class="d-flex justify-content-between align-items-center">
+                        <p class="text-card m-0">Somos a CodeCon</p>
+                        <span class="text-card m-2 text-bg-dark">Online</span>
+                      </section>
+                    </div>
                   </div>
-                  </div>
-                  <div class="card">
+                  <!-- Card-end -->
+                    <!-- Card -->
+                    <div class="card">
                     <img src="./assets/imgs/imgcards/vtex-day-min.png" class="card-img-top" alt="...">
-                    <div class="card-body"> 
+                    <div class="card-body">
                       <section class="d-flex justify-content-between">
                         <div>
-                         <h2></h2>
+                          <h3>Vtex Day</h3>
+                          <p>Lorem Ipsum</p>
                         </div>
                       </section>
+                      <section class="d-flex justify-content-between align-items-center">
+                        <p class="text-card m-0">Somos a CodeCon</p>
+                        <span class="text-card m-2 text-bg-dark">Online</span>
+                      </section>
+                    </div>
                   </div>
-                  </div>
-                  <div class="card">
+                  <!-- Card-end -->
+                    <!-- Card -->
+                    <div class="card">
                     <img src="./assets/imgs/imgcards/websummit-min.png" class="card-img-top" alt="...">
-                    <div class="card-body"> 
+                    <div class="card-body">
                       <section class="d-flex justify-content-between">
                         <div>
-                        <h2></h2>
+                          <h3>Web Summit</h3>
+                          <p>Lorem Ipsum</p>
                         </div>
                       </section>
+                      <section class="d-flex justify-content-between align-items-center">
+                        <p class="text-card m-0">Somos a CodeCon</p>
+                        <span class="text-card m-2 text-bg-dark">Online</span>
+                      </section>
+                    </div>
                   </div>
-                  </div>
-                  <div class="card">
+                  <!-- Card-end -->
+                    <!-- Card -->
+                    <div class="card">
                     <img src="./assets/imgs/imgcards/ruby-conf-min.png" class="card-img-top" alt="...">
-                    <div class="card-body"> 
+                    <div class="card-body">
                       <section class="d-flex justify-content-between">
                         <div>
-                          <h2></h2>
+                          <h3>Ruby Conf</h3>
+                          <p>Lorem Ipsum</p>
                         </div>
                       </section>
+                      <section class="d-flex justify-content-between align-items-center">
+                        <p class="text-card m-0">Somos a CodeCon</p>
+                        <span class="text-card m-2 text-bg-dark">Online</span>
+                      </section>
+                    </div>
                   </div>
+                  <!-- Card-end -->
+                    <!-- Card -->
+                    <div class="card">
+                    <img src="./assets/imgs/imgcards/tdc-image-min.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <h3>TDC</h3>
+                          <p>Lorem Ipsum</p>
+                        </div>
+                      </section>
+                      <section class="d-flex justify-content-between align-items-center">
+                        <p class="text-card m-0">Somos a CodeCon</p>
+                        <span class="text-card m-2 text-bg-dark">Online</span>
+                      </section>
+                    </div>
                   </div>
-                  <div class="card">
+                  <!-- Card-end -->
+                    <!-- Card -->
+                    <div class="card">
+                    <img src="./assets/imgs/imgcards/techweek.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <h3>tech Week</h3>
+                          <p>Lorem Ipsum</p>
+                        </div>
+                      </section>
+                      <section class="d-flex justify-content-between align-items-center">
+                        <p class="text-card m-0">Somos a CodeCon</p>
+                        <span class="text-card m-2 text-bg-dark">Online</span>
+                      </section>
+                    </div>
+                  </div>
+                  <!-- Card-end -->
+                    <!-- Card -->
+                    <div class="card">
                     <img src="./assets/imgs/imgcards/codecon-min.png" class="card-img-top" alt="...">
-                    <div class="card-body"> 
+                    <div class="card-body">
                       <section class="d-flex justify-content-between">
                         <div>
-                         <h2></h2>
+                          <h3>Codecon</h3>
+                          <p>Lorem Ipsum</p>
                         </div>
                       </section>
+                      <section class="d-flex justify-content-between align-items-center">
+                        <p class="text-card m-0">Somos a CodeCon</p>
+                        <span class="text-card m-2 text-bg-dark">Online</span>
+                      </section>
+                    </div>
                   </div>
-                  </div>
-                  <div class="card">
+                  <!-- Card-end -->
+                    <!-- Card -->
+                    <div class="card">
                     <img src="./assets/imgs/imgcards/codecon-min.png" class="card-img-top" alt="...">
-                    <div class="card-body"> 
+                    <div class="card-body">
                       <section class="d-flex justify-content-between">
                         <div>
-                          <h2></h2>
+                          <h3>Codecon</h3>
+                          <p>Lorem Ipsum</p>
                         </div>
                       </section>
+                      <section class="d-flex justify-content-between align-items-center">
+                        <p class="text-card m-0">Somos a CodeCon</p>
+                        <span class="text-card m-2 text-bg-dark">Online</span>
+                      </section>
+                    </div>
                   </div>
+                  <!-- Card-end -->
+                  </section>
+            <!-- 3 slide  -->
+            <section class="container-fluid slide2"> 
+              <div class="d-flex justify-content-between margin-right margin-title">
+                  <h2 class="text-white"> Eventos que você pode gostar </h2> 
+                <div class="">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+              </div>
+              <!--  -->
+              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-inner" style="position: relative; overflow: visible;">
+            <div class="carousel-item active">
+              <section class="d-flex">
+                <!-- Card -->
+                <div class="card">
+                  <img src="./assets/imgs/imgcards/codecon-min.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <h3>Codecon</h3>
+                        <p>Lorem Ipsum</p>
+                      </div>
+                    </section>
+                    <section class="d-flex justify-content-between align-items-center">
+                      <p class="text-card m-0">Somos a CodeCon</p>
+                      <span class="text-card m-2 text-bg-dark">Online</span>
+                    </section>
                   </div>
+                </div>
+                <!-- Card-end -->
+                  <!-- Card -->
                   <div class="card">
-                    <img src="./assets/imgs/imgcards/codecon-min.png" class="card-img-top" alt="...">
-                    <div class="card-body"> 
-                      <section class="d-flex justify-content-between">
-                        <div>
-                          <h2></h2>
-                        </div>
-                      </section>
+                  <img src="./assets/imgs/imgcards/devops-min.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <h3>Devops</h3>
+                        <p>Lorem Ipsum</p>
+                      </div>
+                    </section>
+                    <section class="d-flex justify-content-between align-items-center">
+                      <p class="text-card m-0">Somos a CodeCon</p>
+                      <span class="text-card m-2 text-bg-dark">Online</span>
+                    </section>
                   </div>
-                  </div>
+                </div>
+                <!-- Card-end -->
+                  <!-- Card -->
                   <div class="card">
-                    <img src="./assets/imgs/imgcards/codecon-min.png" class="card-img-top" alt="...">
-                    <div class="card-body"> 
-                      <section class="d-flex justify-content-between">
-                        <div>
-                          <h2></h2>
-                        </div>
-                      </section>
+                  <img src="./assets/imgs/imgcards/frontinn-min.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <h3>Frontin Sampa</h3>
+                        <p>Lorem Ipsum</p>
+                      </div>
+                    </section>
+                    <section class="d-flex justify-content-between align-items-center">
+                      <p class="text-card m-0">Somos a CodeCon</p>
+                      <span class="text-card m-2 text-bg-dark">Online</span>
+                    </section>
                   </div>
-                  </div>
+                </div>
+                <!-- Card-end -->
+                  <!-- Card -->
                   <div class="card">
-                    <img src="./assets/imgs/imgcards/codecon-min.png" class="card-img-top" alt="...">
-                    <div class="card-body"> 
-                      <section class="d-flex justify-content-between">
-                        <div>
-                          <h2></h2>
-                        </div>
-                      </section>
+                  <img src="./assets/imgs/imgcards/vtex-day-min.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <h3>Vtex Day</h3>
+                        <p>Lorem Ipsum</p>
+                      </div>
+                    </section>
+                    <section class="d-flex justify-content-between align-items-center">
+                      <p class="text-card m-0">Somos a CodeCon</p>
+                      <span class="text-card m-2 text-bg-dark">Online</span>
+                    </section>
                   </div>
-                  </div>
+                </div>
+                <!-- Card-end -->
+                  <!-- Card -->
                   <div class="card">
-                    <img src="./assets/imgs/imgcards/codecon-min.png" class="card-img-top" alt="...">
-                    <div class="card-body"> 
-                      <section class="d-flex justify-content-between">
-                        <div>
-                          <h2></h2>
-                        </div>
-                      </section>
+                  <img src="./assets/imgs/imgcards/websummit-min.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <h3>Web Summit</h3>
+                        <p>Lorem Ipsum</p>
+                      </div>
+                    </section>
+                    <section class="d-flex justify-content-between align-items-center">
+                      <p class="text-card m-0">Somos a CodeCon</p>
+                      <span class="text-card m-2 text-bg-dark">Online</span>
+                    </section>
                   </div>
+                </div>
+                <!-- Card-end -->
+                  <!-- Card -->
+                  <div class="card">
+                  <img src="./assets/imgs/imgcards/ruby-conf-min.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <h3>Ruby Conf</h3>
+                        <p>Lorem Ipsum</p>
+                      </div>
+                    </section>
+                    <section class="d-flex justify-content-between align-items-center">
+                      <p class="text-card m-0">Somos a CodeCon</p>
+                      <span class="text-card m-2 text-bg-dark">Online</span>
+                    </section>
                   </div>
-           
-<!--              
-            <div class="carousel-item">
-              <img src="..." class="d-block w-100" alt="...">
-            </div>
-            
-            <div class="carousel-item">
-              <img src="..." class="d-block w-100" alt="...">
-            </div>
-           
-            <div class="carousel-item">
-              <img src="..." class="d-block w-100" alt="...">
-            </div>
-            
-            <div class="carousel-item">
-              <img src="..." class="d-block w-100" alt="...">
-            </div>
-            
-            <div class="carousel-item">
-              <img src="..." class="d-block w-100" alt="...">
-            </div>
-            
-            <div class="carousel-item">
-              <img src="..." class="d-block w-100" alt="...">
-            </div>
-            </div>
+                </div>
+                <!-- Card-end -->
+                  <!-- Card -->
+                  <div class="card">
+                  <img src="./assets/imgs/imgcards/tdc-image-min.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <h3>TDC</h3>
+                        <p>Lorem Ipsum</p>
+                      </div>
+                    </section>
+                    <section class="d-flex justify-content-between align-items-center">
+                      <p class="text-card m-0">Somos a CodeCon</p>
+                      <span class="text-card m-2 text-bg-dark">Online</span>
+                    </section>
+                  </div>
+                </div>
+                <!-- Card-end -->
+                  <!-- Card -->
+                  <div class="card">
+                  <img src="./assets/imgs/imgcards/techweek.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <h3>tech Week</h3>
+                        <p>Lorem Ipsum</p>
+                      </div>
+                    </section>
+                    <section class="d-flex justify-content-between align-items-center">
+                      <p class="text-card m-0">Somos a CodeCon</p>
+                      <span class="text-card m-2 text-bg-dark">Online</span>
+                    </section>
+                  </div>
+                </div>
+                <!-- Card-end -->
+                  <!-- Card -->
+                  <div class="card">
+                  <img src="./assets/imgs/imgcards/codecon-min.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <h3>Codecon</h3>
+                        <p>Lorem Ipsum</p>
+                      </div>
+                    </section>
+                    <section class="d-flex justify-content-between align-items-center">
+                      <p class="text-card m-0">Somos a CodeCon</p>
+                      <span class="text-card m-2 text-bg-dark">Online</span>
+                    </section>
+                  </div>
+                </div>
+                <!-- Card-end -->
+                  <!-- Card -->
+                  <div class="card">
+                  <img src="./assets/imgs/imgcards/codecon-min.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <h3>Codecon</h3>
+                        <p>Lorem Ipsum</p>
+                      </div>
+                    </section>
+                    <section class="d-flex justify-content-between align-items-center">
+                      <p class="text-card m-0">Somos a CodeCon</p>
+                      <span class="text-card m-2 text-bg-dark">Online</span>
+                    </section>
+                  </div>
+                </div>
+                <!-- Card-end -->
+                </section>
+            <!-- 4 slide  -->
+          </div>
         </div>
-        </section>
-        </div> -->
-
-
-      <!-- <section class="container-sugestão-eventos">
-        <div class="info">
-          <h2>Algumas Sugestões de Eventos</h2>
-          <p>Eventos que você pode gostar</p>
-        </div>
-        <div class="event-cards">
-          <div class="cards">
-            <img src="/assets/imgs/imgcards/codecon-min.png" alt="">
-          </div>
-          <div class="cards">
-            <img src="/assets/imgs/imgcards/devops-min.png" alt="">
-          </div>
-          <div class="cards">
-            <img src="/assets/imgs/imgcards/vtex-day-min.png" alt="">
-          </div>
       </section>
-
-      <section class="container-palestrantes">
-          <h2>Principais Palestrantes</h2>
-        <div class="info-palestrantes">
-          <img src="/assets/imgs/imgcards/person1-min.png" alt="">
-          <h3>Gabriel</h3>
-          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div class="info-palestrantes">
-          <img src="/assets/imgs/imgcards/person2-min.png" alt="">
-          <h3>Carlos</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div class="info-palestrantes">
-          <img src="/assets/imgs/imgcards/person3-min.png" alt="">
-          <h3>Miguel</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div class="info-palestrantes">
-          <img src="/assets/imgs/imgcards/person4-min.png" alt="">
-          <h3>Luana</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-      </section>
-
-      <section class="container-tabela-programacao"></section>
-    </main>
-    <!-- FOOTER -->
-    <!-- <footer id="contato">
-      <div class="container-footer">
-        <div class="menu-body">
-          <h2>Sobre</h2>
-          <p>DevCommunity, visa reunir os principais eventos tech do Brasil.</p>
-        </div>
-        <div class="menu-body">
-          <img src="./assets/imgs/logodev.png" alt="Logo do site " />
-        </div>
-        <div class="menu-body">
-          <h2>Siga nossas redes sociais</h2>
-          <nav>
+        
+<!-- FOOTER --> 
+      <footer class="container footer">
+        <div class="row">
+          <div class="col-md-10  mx-auto">
+            <div class="row">
+            <div class="col-md-3">
             <ul>
-              <li>
-                <a href="#"><img src="./assets/webfonts/instagram-brands.svg" alt="Logo Instagram"/></a>
-              </li>
-              <li>
-                <a href="#"><img src="./assets/webfonts/linkedin-brands.svg" alt="Logo Linkedin"/></a>
-              </li>
-              <li>
-                <a href="#"><img src="./assets/webfonts/square-facebook-brands.svg" alt="Logo Facebook"/></a>
-              </li>
+              <li>Sobre</li>
+              <li>Privacy</li>
+              <li>Contato</li>
             </ul>
-          </nav>
+            </div>
+            <div class="col-md-3">
+            <ul>
+              <li>Sobre</li>
+              <li>Privacy</li>
+              <li>Contato</li>
+            </ul>
+            </div>
+            <div class="col-md-3">
+            <ul>
+              <li>Investor</li>
+              <li>Terms</li>
+            </ul>
+            </div>
+            <div class="col-md-3">
+            <ul>
+              <li>Investor</li>
+              <li>Terms</li>
+            </ul>
+            </div>
+          </div>
         </div>
-      </div> -->
-    </footer> -->
+        <div class="col-md-10 mx-auto">
+          <div class="row">
+            <div class="col">
+              <p class="copy-right">@dev community copyright By <b style="color:red">Eric Antunes</b></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </footer>
 
-    <!-- script -->
-    <script src="./assets/libs/bootstrap/bootstrap.bundle.min.js"></script>
-
-  </body>
+<!-- script -->
+<script src="./libs/bootstrap/bootstrap.bundle.min.js"></script>
+</body>
 </html>
