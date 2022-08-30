@@ -126,19 +126,19 @@ ul {
 
 .slide2 {
   position: absolute;
-  top: 300px;
+  top: 200px;
   z-index: 500;
 }
 
 .slide3 {
   position: absolute;
-  top: 300px;
-  z-index: 500;
+  top: 200px;
+  z-index: 600;
 }
 
 
 .card {
-  width: 250px;
+  width: 200px;
   background: #141414;
   border-radius: 4px;
   transition: 0.2s linear;
@@ -168,7 +168,6 @@ ul {
 
 .card:hover > .card-body {
   display: block;
-  border: 1px solid #343434;
 }
 
 .carousel-control-prev{
@@ -221,26 +220,38 @@ ul {
   color: rgba(255, 255, 255, 0.646);
 }
 
+ul li a {
+  color: rgba(255, 255, 255, 0.646)!important; 
+  text-decoration: none;
+}
+
 .copy-right {
   font-size: 12px;
   font-weight: 400;
   color: #fff;
   margin-left: 30px;
-
 }
 
 /* Responsive */
 @media screen and (max-width: 1024px){
-
+  .banner-img {
+    width: 100%;
+  }
 }
 
 /*Para Dispositivos de 980px ou menos*/
 @media screen and (max-width: 980px){
-    
+  .banner-img {
+    width: 100%;
+  }
 }
 
 /*Para Dispositivos de 768px ou menos*/
 @media screen and (max-width: 768px){
+  .banner-img {
+    width: 100%;
+  }
+
 	.card{
     width: 150px;
   }
