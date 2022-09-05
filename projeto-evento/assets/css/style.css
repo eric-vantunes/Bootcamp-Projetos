@@ -92,23 +92,16 @@ p {
 }
 
 .sub-titulo {
-  max-width: 1700px;
-  width: 100%;
-  margin: 0 auto;
+ color: #4b4b4b;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
 }
 
 /* card */
-.container-card {
-  max-width: 1700px;
-  margin: 0 auto;
-}
-
-.card{
-  transition: 0.2s linear;
-}
-
 .bg-body{
-  height: 110px;
+  border-radius: 3px;
+  height: 120px;
 }
 .bg-body h5{
   text-align: center;
@@ -123,22 +116,68 @@ p {
 }
 
 .bg-body button {
-  padding: 3px;
+  float: left;
+  margin-left: 80px;
   margin-top: 25px;
-  margin-left: 15px;
+  padding: 7px;
   font-size: 12px;
+}
+.bg-body button:hover {
+transition: 1s;
+}
+.bg-body button i{
+  margin-right: 3px;
 }
 
 .card:hover {
-  transform: scale(1.1);
-  transition: all 0.5s;
   cursor: pointer;
+}
+
+.modal-img {
+  width: 770px;
+}
+
+/* Palestrantes */
+.container-palestrantes {
+  background-color: #252525;
+  padding: 40px;
+}
+
+.container-palestrantes h2 {
+  margin-bottom: 50px;
+}
+
+.info-palestrantes img{
+  transition: all .5s;
+  border: 10px solid transparent;
+  border-radius: 10%;
+  
+}
+.info-palestrantes img:hover{
+  cursor: pointer;
+  border: 10px solid #4b4b4b;
+  border-radius: 50%;
+}
+.info-palestrantes h3{
+  text-align: center;
+}
+
+.info-palestrantes span {
+  text-align: center;
 }
 
 /* -----------FOOTER----------- */
 .footer {
-  margin-top: 500px;
-  height: 100px;
+  background-color: #000;
+  width: 100%;
+  padding: 100px;
+}
+
+.border-right {
+  border-right: 3px solid #1f1f1f;
+}
+.border-right:last-child {
+  border: none;
 }
 
 ul {
@@ -154,6 +193,7 @@ ul li a {
 }
 
 .copy-right {
+  float: left;
   font-size: 12px;
   font-weight: 400;
   color: #fff;
@@ -161,6 +201,12 @@ ul li a {
 }
 .copy-right b{
   color: #4e4e4e;
+}
+
+.footer-img {
+  width: 150px;
+  float: right;
+  margin-right: 100px;
 }
 
 /* Responsive */
@@ -230,7 +276,7 @@ ul li a {
     top: 90px;
   }
 
-  .d-flex button {
+  .mobile-btn button {
     top: 110px;
     padding: 5px;
   }
@@ -249,10 +295,31 @@ ul li a {
     top: 80px;
   }
 
-  .d-flex button {
+  .carousel-btn {
+    display: none;
+  }
+
+  .mobile-btn button {
     top: 95px;
     padding: 2px;
-    margin-left: 50px !important;
+    margin-left: 70px !important;
+  }
+
+  .bg-body button {
+    margin-left: 0px;
+    padding: 5px;
+    font-size: 11px;
+  }
+
+  .container-mobile {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
   }
 
 }
