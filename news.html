@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font -->
+    <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;700;800&family=Ubuntu+Condensed&display=swap"
+    rel="stylesheet"
+  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="./assets/libs/animate/animate.min.css" />
+    <!-- bootstrap -->
+    <link href="./assets/libs/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <!-- slick -->
+    <link rel="stylesheet" href="./assets/libs/slick/slick.css">
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Notícias - Dev Community</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand logo" href="index.html">
+            <img src="./assets/imgs/logodev.png" alt=" Logo da Página" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="#navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse navbar"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Notícias</a
+                >
+                <img class="animate-image" src="/assets/imgs/welcome.gif" alt="" />
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#eventos">Eventos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">Palestrantes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">Contatos</a>
+              </li>
+            </ul>
+            <form class="d-flex form" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Pesquisar Notícias"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-light" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="banner-news">
+        <div class="col-12">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+          <div class="carousel-inner" id="carousel-banner"></div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        </div>
+      </section>
+    <div class="main-news">
+      <section class="posts">
+        <article class="post post--100">
+          <h2>Notícias</h2>
+          <img class="image-aside"  src="/assets/imgs/hackaton-rio-min 1.png" alt="">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
+            quam quos iusto totam beatae in vero nisi. Voluptas quia corporis
+            amet veritatis doloribus, delectus necessitatibus ipsam reiciendis?
+            Quo, nostrum ducimus.
+          </p>
+          <h3>Lorem ipsum!</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores
+            eius repellat excepturi facilis sunt corporis rerum odio, commodi
+            quasi accusantium, nemo beatae, reprehenderit soluta odit natus ipsa
+            porro. Commodi, blanditiis.
+          </p>
+          <h3>Lorem ipsum!</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores
+            eius repellat excepturi facilis sunt corporis rerum odio, commodi
+            quasi accusantium, nemo beatae, reprehenderit soluta odit natus ipsa
+            porro. Commodi, blanditiis.
+          </p>
+        </article>
+        <article class="post post--100">
+          <h2>Notícias em alta</h2>
+          <img src="./assets/imgs/devops-day.png" alt="" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
+            quam quos iusto totam beatae in vero nisi. Voluptas quia corporis
+            amet veritatis doloribus, delectus necessitatibus ipsam reiciendis?
+            Quo, nostrum ducimus.
+          </p>
+          <h3>Lorem ipsum!</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores
+            eius repellat excepturi facilis sunt corporis rerum odio, commodi
+            quasi accusantium, nemo beatae, reprehenderit soluta odit natus ipsa
+            porro. Commodi, blanditiis.
+          </p>
+          <h3>Lorem ipsum!</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores
+            eius repellat excepturi facilis sunt corporis rerum odio, commodi
+            quasi accusantium, nemo beatae, reprehenderit soluta odit natus ipsa
+            porro. Commodi, blanditiis.
+          </p>
+        </article>
+        <section class="multiple-post">
+          <article class="post post--50">
+            <div class="card" style="width: 14rem;">
+              <img src="./assets/imgs/pc-img.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Linus Torvalds <strong>dá bronca</strong> em Devs do kernel Linux.</h5>
+                <p class="card-text text-black">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-outline-secondary">Leia Mais</a>
+              </div>
+            </div>
+          </article>
+          <article class="post post--50">
+            <div class="card" style="width: 14rem;">
+              <img src="./assets/imgs/pc-img.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Linus Torvalds <strong>dá bronca</strong> em Devs do kernel Linux.</h5>
+                <p class="card-text text-black">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-outline-secondary">Leia Mais</a>
+              </div>
+            </div>
+          </article>
+        </section>
+        <article class="post post--100">
+          <img src="./assets/img/post-cover-min.jpg" alt="" />
+          <h3>Lorem Ipsum</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores
+            eius repellat excepturi facilis sunt corporis rerum odio, commodi
+            quasi accusantium, nemo beatae, reprehenderit soluta odit natus ipsa
+            porro. Commodi, blanditiis.
+          </p>
+        </article>
+        <section class="multiple-post">
+          <article class="post post--33">
+            <div class="card" style="width: 18rem;">
+              <img src="./assets/imgs/pc-img.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Linus Torvalds <strong>dá bronca</strong> em Devs do kernel Linux.</h5>
+                <p class="card-text text-black">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-outline-secondary">Leia Mais</a>
+              </div>
+            </div>
+          </article>
+          <article class="post post--33">
+            <div class="card" style="width: 18rem;">
+              <img src="./assets/imgs/pc-img.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Linus Torvalds <strong>dá bronca</strong> em Devs do kernel Linux.</h5>
+                <p class="card-text text-black">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-outline-dark">Leia Mais</a>
+              </div>
+            </div>
+          </article>
+          <article class="post post--33">
+            <div class="card" style="width: 18rem;">
+              <img src="./assets/imgs/pc-img.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Linus Torvalds <strong>dá bronca</strong> em Devs do kernel Linux.</h5>
+                <p class="card-text text-black">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-outline-dark">Leia Mais</a>
+              </div>
+            </div>
+          </article>
+        </section>
+      </section>
+      <aside>
+        <section class="panel">
+          <h2>Posts Recentes</h2>
+          <div class="padding-post">
+            <article class="side-post">
+              <img src="./assets/img/side-post-cover-min.jpg" alt="" />
+              <div class="side-post--text">
+                <h3>Com o fim da pandemia, eventos de tecnologia voltam com tudo.</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Excepturi ex autem saepe non, magni dolorem...
+                </p>
+              </div>
+            </article>
+            <article class="side-post">
+              <img src="./assets/img/side-post-cover-min.jpg" alt="" />
+              <div class="side-post--text">
+                <h3>Lorem Ipsum</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Excepturi ex autem saepe non, magni doloremque!.
+                </p>
+              </div>
+            </article>
+            <article class="side-post">
+              <img src="./assets/img/side-post-cover-min.jpg" alt="" />
+              <div class="side-post--text">
+                <h3>Lorem Ipsum</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Excepturi ex autem saepe non, magni doloremque!.
+                </p>
+              </div>
+            </article>
+            <article class="side-post">
+              <img src="./assets/img/side-post-cover-min.jpg" alt="" />
+              <div class="side-post--text">
+                <h3>Lorem Ipsum</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Excepturi ex autem saepe non, magni doloremque!.
+                </p>
+              </div>
+            </article>
+            <article class="side-post">
+              <img src="./assets/img/side-post-cover-min.jpg" alt="" />
+              <div class="side-post--text">
+                <h3>Lorem Ipsum</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Excepturi ex autem saepe non, magni doloremque!.
+                </p>
+              </div>
+            </article>
+            <article class="side-post">
+              <img src="./assets/img/side-post-cover-min.jpg" alt="" />
+              <div class="side-post--text">
+                <h3>Lorem Ipsum</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Excepturi ex autem saepe non, magni doloremque!.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="list">
+          <h3>.</h3>
+          <ul>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+              optio tempore repellat. Commodi labore atque eligendi officiis.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+              optio tempore repellat. Commodi labore atque eligendi officiis.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+              optio tempore repellat. Commodi labore atque eligendi officiis.
+            </li>
+          </ul>
+        </section>
+        <img class="image-aside" src="./assets/imgs/bg-news.png" alt="" />
+      </aside>
+    </div>
+    </main>
+    <!-- FOOTER -->
+    <footer class="container-fluid footer" id="footer">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <div class="row">
+            <div class="col-md-3 border-right">
+              <ul>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Contato</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 border-right">
+              <ul>
+                <li><a href="#">Avisos legais</a></li>
+                <li><a href="#">Preferências de cookies</a></li>
+                <li><a href="#">Informações corporativas</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 border-right">
+              <ul>
+                <li><a href="#">Investor</a></li>
+                <li><a href="#">Terms</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 border-right">
+              <ul>
+                <li><a href="#">Localização</a></li>
+                <li><a href="#">Central de Ajuda</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8 mx-auto">
+          <div class="row">
+            <div class="col-md-12">
+              <p class="copy-right">
+                @dev community copyright By <b>Eric Antunes</b>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./assets/libs/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/libs/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./assets/libs/slick/slick.min.js"></script>
+    <script src="./assets/js/news.js"></script>
+  </body>
+</html>
