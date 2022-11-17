@@ -9,5 +9,7 @@
   <li>HTML5</li>
   <li>CSS3</li>
   <li>Bootstrap</li>
+  <li>JavaScript</li>
+  <li>Slick</li>
 </ul>
 
